@@ -50,7 +50,7 @@ const directionalLight = new THREE.DirectionalLight(0xffffff, 0.1);
   //scene.add(cube);
 
   let bookcase;
-loader.load('/bookcase.glb', function (gltf) {
+loader.load('./bookcase.glb', function (gltf) {
     bookcase = gltf.scene;
     bookcase.rotation.y = Math.PI; 
     console.log(bookcase)
